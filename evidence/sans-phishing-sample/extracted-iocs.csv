@@ -1,0 +1,7 @@
+indicator_type,indicator_value,context,status,confidence
+email_domain,acmeacb.com,Look-alike sender domain shown in the SANS sample,training indicator,high
+impersonated_domain,acmeabc.com,Legitimate-looking domain being imitated in the example,reference only,high
+social_engineering,urgent payment change,Request to update wiring instructions immediately,behavioral indicator,high
+financial_detail,new routing and account number,Attempted redirection of a business payment,behavioral indicator,high
+timing,Friday 4:55 PM,Sent when accounting staff may be rushed,contextual indicator,medium
+message_format,fake forwarded email,Creates a false trusted conversation history,behavioral indicator,high

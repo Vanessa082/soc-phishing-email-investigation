@@ -1,0 +1,45 @@
+# Sanitized Gmail Header Evidence
+# Personal email addresses and the full Message-ID were replaced before publication.
+# Authentication and routing observations are preserved.
+
+Delivered-To: recipient@example.com
+Received: by Google SMTP infrastructure; Thu, 30 Jul 2026 16:11:39 -0700 (PDT)
+Return-Path: <analyst.training@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com [209.85.220.65])
+        by mx.google.com with SMTPS
+        for <recipient@example.com>;
+        Thu, 30 Jul 2026 16:11:38 -0700 (PDT)
+
+Received-SPF: pass
+Authentication-Results: mx.google.com;
+        dkim=pass header.i=@gmail.com;
+        spf=pass smtp.mailfrom=analyst.training@gmail.com;
+        dmarc=pass header.from=gmail.com
+
+DKIM-Signature:
+        d=gmail.com;
+        result=pass
+
+MIME-Version: 1.0
+From: Wah Vanessa <analyst.training@gmail.com>
+Date: Fri, 31 Jul 2026 00:11:01 +0100
+Message-ID: <sanitized-message-id@mail.gmail.com>
+Subject: Training Exercise: Verify Your Account
+To: recipient@example.com
+Content-Type: multipart/alternative
+
+Hello,
+
+This is a cybersecurity training exercise.
+
+Imagine this email claims your Microsoft 365 account needs verification.
+
+In a real phishing email, there might be pressure to act immediately and a
+link asking you to sign in.
+
+For this exercise, DO NOT click any links because there are none. Your task
+is to analyze the message as if it had been reported to your SOC.
+
+Regards,
+
+IT Security Training Team
